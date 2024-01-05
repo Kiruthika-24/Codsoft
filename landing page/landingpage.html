@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <link rel="stylesheet" href="landingpage.css" />
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function book() {
+        alert(
+          "Your visit is confirmed!!! Confirmation will be sent to your mail"
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <div id="homepage">
+      <section class="header">
+        <div class="home-content" id="home-page">
+          <div class="name">
+            <h1>It's New Year!!</h1>
+            <p><span>20% OFF </span>on all your orders</p>
+          </div>
+          <div class="angle-down-icon">
+            <a href="#aboutUs"><i class="fas fa-angle-down"></i></a>
+          </div>
+        </div>
+        <div class="button-section">
+          <button class="animate">
+            <a href="#visit">Book Now</a>
+          </button>
+        </div>
+      </section>
+      <section id="aboutUs">
+        <div class="contents">
+          <div class="new-div">
+            A well-curated spices website beckons enthusiasts with a tempting array of offers designed to enhance the culinary journey. 
+            Delightful discounts and promotions adorn the virtual aisles, encouraging patrons to explore the world of flavors. Bulk purchases 
+            become a rewarding endeavor with enticing bundle deals, from themed spice collections to seasonal specials.
+            The website extends a warm welcome to new visitors, inviting them to savor exclusive discounts on their inaugural spice selections.
+            <br /><br />
+          </div>
+          <div class="book-link">
+            <a href=""><i class="fas fa-angle-down"></i></a>
+          </div>
+        </div>
+      </section>
+      <section class="appointment" id="visit">
+        <h1 class="heading">BOOK YOUR ORDER NOW!!</h1>
+        <div class="formContainer">
+          <form action="">
+            <h3>Book your order</h3>
+            <label>Name :<span>*</span></label>
+            <input class="inputwithLine" type="text" required />
+            <label>Email : <span>*</span> </label>
+            <input class="inputwithLine" type="email" required />
+            <label>Pick a date: <span>*</span></label>
+            <input class="inputwithLine" type="date" required />
+            <label>Service:<span>*</span></label>
+            <input class="inputwithLine" type="text" required />
+            <label>Time: <span>*</span></label>
+            <div class="input">
+              <input type="time" class="time" required />
+              <!--  -->
+            </div>
+          </form>
+          <button class="btn" onclick="book()" type="submit">
+            place your order
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
